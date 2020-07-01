@@ -1,0 +1,17 @@
+.default {
+	color: rgb(227, 227, 227);
+	font-size: 1.2rem;
+	font-weight: 100;
+	padding: 3px;
+}
+.default:hover {
+	background-color: rgba(127, 127, 127, 0.4);
+	color: rgb(255, 255, 255);
+	border-radius: 3px;
+	cursor: pointer;
+}
+.icontainer {
+	display: contents;
+	width: fit-content;
+	position: relative;
+}

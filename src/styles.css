@@ -1,0 +1,144 @@
+.App {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: rgb(219, 216, 216);
+  font-size: 12px;
+  background: rgb(31, 31, 31);
+  min-height: 100vh;
+}
+.top {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: 10px;
+}
+.top > * {
+  flex: 1;
+  position: relative;
+}
+.top > div > span:nth-child(2) {
+  position: absolute;
+  top: -10px;
+  padding: 1px 5px;
+  font-size: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgb(218, 90, 81);
+}
+.main {
+  display: flex;
+}
+.left,
+.right,
+.middle {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: 0 0 10px 10px;
+  flex: 4;
+  height: 90vh;
+}
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.right {
+  margin-right: 10px;
+}
+.left span {
+  padding: 10px 0;
+}
+.left span:not(:first-child):hover {
+  cursor: pointer;
+}
+.paginated_lists {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+.paginated_lists li,
+.cart-count,
+.cart-total {
+  padding: 10px;
+  display: flex;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.cart-count,
+.cart-total {
+  width: 150px;
+  justify-content: center;
+}
+.paginated_lists li:nth-child(even) {
+  /* background: linear-gradient(to right, #221f42, #302b63, #2b2b49); */
+}
+.paginated_lists li:nth-child(odd) {
+  /* background: linear-gradient(to right, #120f2c, #302b63, #24243e); */
+}
+.paginated_lists li > * {
+  flex: 1;
+}
+.paginated_lists li > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item > div:nth-child(2) {
+  flex: 3;
+}
+.cart-item > div > div {
+  display: flex;
+}
+.cart-item > div > div > *:not(:last-child) {
+  flex: 1;
+}
+.cart-item > div > div > *:last-child {
+  flex: 5;
+}
+button {
+  border-radius: 5px;
+  border: none;
+  color: inherit;
+  height: 30px;
+  max-width: 90px;
+  background-color: rgb(218, 90, 81);
+  margin: 10px;
+}
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 50px;
+  width: 600px;
+  background: linear-gradient(to right, #16222a, #3a6073);
+  border-radius: 5px;
+}
+
+.paginated {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-between;
+}
+
+.paginated_pages {
+  /* background-color: rgb(185, 105, 105); */
+  padding: 10px;
+}
+.paginated_pages span {
+  padding: 4px 8px;
+  border: 1px solid rgb(104, 102, 102);
+  border-radius: 2px;
+  margin: 2px;
+}
+.paginated_pages span:hover {
+  background-color: rgb(104, 102, 102);
+}
+.active {
+  background-color: rgb(218, 90, 81);
+}
