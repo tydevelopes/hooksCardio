@@ -44,13 +44,6 @@ const Pagination = ({ items, itemsPerPage, filterState }) => {
     renderPage(currentPage + 1, pageRef.current[currentPage]);
   };
 
-  // useEffect(() => {
-  //   pageRef.current = document.querySelectorAll(".page");
-  //   console.log("pages", pageRef.current);
-
-  //   renderPage(1, pageRef.current[currentPage - 1]);
-  // }, []);
-
   useEffect(() => {
     pageRef.current = document.querySelectorAll(".page");
     console.log("pages", pageRef.current);
